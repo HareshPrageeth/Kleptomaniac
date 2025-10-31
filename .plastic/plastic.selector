@@ -1,4 +1,0 @@
-repository "Kleptomaniac/Kleptomaniac@20066538082770@cloud"
-  path "/"
-    br "/main"
-    co "/main"
