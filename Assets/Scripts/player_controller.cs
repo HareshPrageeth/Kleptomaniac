@@ -7,6 +7,7 @@ public class player_controller : MonoBehaviour
     public float moveSpeed = 5f;
     public LayerMask solidObjectsLayer;
 
+    public bool canMove = true;
     private bool isMoving;
     private Vector2 input;
 
@@ -21,6 +22,12 @@ public class player_controller : MonoBehaviour
 
     private void Update()
     {
+        if (!canMove) 
+        {
+            animator.SetBool("isMoving", false);
+            return;
+        }
+
         if (!isMoving)
         {
             // get input
@@ -76,5 +83,26 @@ public class player_controller : MonoBehaviour
             return false;
         }
         return true;
+    }
+
+    public void ResetMovement()
+    {
+        isMoving = false;
+        input = Vector2.zero;
+    }
+
+    public void FaceDirection(Vector2 dir)
+    {
+        animator.SetFloat("moveX", dir.x);
+        animator.SetFloat("moveY", dir.y);
+
+        if (dir.x < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else if (dir.x > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
     }
 }
