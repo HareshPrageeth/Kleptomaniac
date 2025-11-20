@@ -102,7 +102,7 @@ public class player_controller : MonoBehaviour
         return Physics2D.OverlapCircle(targetPos, 0.1f, solidObjectsLayer) == null;
     }
 
-    // Converts TilemapType enum → actual Tilemap reference
+    // Converts TilemapType enum
     private Tilemap GetTilemap(TilemapType type)
     {
         return type switch
@@ -157,7 +157,7 @@ public class player_controller : MonoBehaviour
         heldItemRenderer.enabled = true;
         heldItemRenderer.gameObject.SetActive(true);
 
-        Debug.Log($"Picked up {obj.objectName} but NOT stored yet.");
+        Debug.Log($"Picked up {obj.objectName} but not stored yet.");
     }
 
 
@@ -195,7 +195,7 @@ public class player_controller : MonoBehaviour
             inventory[startIndex + j] = obj;
         }
 
-        Debug.Log($"Added {obj.objectName}, occupying {size} slots.");
+        Debug.Log($"Added {obj.objectName}");
     }
 
     private void CommitHeldItem()
@@ -206,7 +206,7 @@ public class player_controller : MonoBehaviour
         // Large items cannot be added
         if (heldItem.inventorySize > 1)
         {
-            Debug.Log($"{heldItem.objectName} is too big to fit in the inventory!");
+            Debug.Log($"{heldItem.objectName} is too big to fit in the inventory");
             return;
         }
 

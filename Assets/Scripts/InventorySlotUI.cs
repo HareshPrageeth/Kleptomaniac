@@ -3,10 +3,11 @@ using UnityEngine.UI;
 
 public class InventorySlotUI : MonoBehaviour
 {
-    public int slotIndex;           // ← add this back
-    public Image backgroundImage;   // always visible
-    public Image itemImage;         // shows the TileObject icon
+    public int slotIndex;
+    public Image backgroundImage;
+    public Image itemImage;
 
+    // Sets item in inventory
     public void SetItem(TileObject item)
     {
         if (item == null)

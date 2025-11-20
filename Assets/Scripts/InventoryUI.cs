@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class InventoryUI : MonoBehaviour
 {
-    public player_controller player;     // reference to your player script
-    public GameObject slotPrefab;        // UI slot prefab
-    public GridLayoutGroup grid;         // GridLayout on the panel
+    public player_controller player;     
+    public GameObject slotPrefab;        
+    public GridLayoutGroup grid;
 
     private InventorySlotUI[] slots;
 
@@ -15,7 +15,7 @@ public class InventoryUI : MonoBehaviour
         Refresh();
     }
 
-    // Creates UI slot objects dynamically based on inventory length
+    // Creates UI slot objects dynamically based on inventory array length
     private void BuildSlots()
     {
         int count = player.inventory.Length;
