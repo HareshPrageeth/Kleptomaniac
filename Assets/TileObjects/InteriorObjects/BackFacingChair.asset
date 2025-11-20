@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb136113fa062045a63cc6a17aea098, type: 3}
+  m_Name: BackFacingChair
+  m_EditorClassIdentifier: Assembly-CSharp::TileObject
+  objectName: Back Facing Chair
+  mainTile: {fileID: 11400000, guid: 6657da62e658f1b448ccdf38a89a2029, type: 2}
+  parts:
+  - mapType: 0
+    offset: {x: 0, y: 0, z: 0}
+  - mapType: 1
+    offset: {x: 0, y: 1, z: 0}
+  inventorySize: 2
