@@ -1,22 +1,37 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class player_controller : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public LayerMask solidObjectsLayer;
+    public TileObject[] inventory = new TileObject[8]; // 8 slots
+
+    // Assign these in Inspector
+    public Tilemap collisionTilemap;
+    public Tilemap walkBehindTilemap;
+    public Tilemap groundTilemap;
+    public Tilemap decorationTilemap;
+    public Tilemap walkInFrontTilemap;
+
+    public TileObjectRegistry objectRegistry;
+
+    public TileObject heldItem = null;
+    public SpriteRenderer heldItemRenderer; 
+
+    private Vector3Int heldItemOrigin;
+    private TilemapType heldItemMainMap;
 
     private bool isMoving;
     private Vector2 input;
 
     private Animator animator;
-    private Transform playerTransform;
 
     private void Start()
     {
+        heldItemRenderer.enabled = false;
         animator = GetComponent<Animator>();
-        playerTransform = GetComponent<Transform>();
     }
 
     private void Update()
@@ -40,15 +55,28 @@ public class player_controller : MonoBehaviour
                 else if (input.x > 0)
                     transform.localScale = new Vector3(1, 1, 1);
 
-                Vector3 targetPos = transform.position;
-                targetPos.x += input.x;
-                targetPos.y += input.y;
-                
+                Vector3 targetPos = transform.position + new Vector3(input.x, input.y);
+
                 if (IsWalkable(targetPos))
                 {
                     StartCoroutine(Move(targetPos));
                 }
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            BreakTile();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            CommitHeldItem();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            DropHeldItem();
         }
 
         animator.SetBool("isMoving", isMoving);
@@ -71,10 +99,156 @@ public class player_controller : MonoBehaviour
 
     private bool IsWalkable(Vector3 targetPos)
     {
-        if (Physics2D.OverlapCircle(targetPos, 0.1f, solidObjectsLayer) != null)
-        {
-            return false;
-        }
-        return true;
+        return Physics2D.OverlapCircle(targetPos, 0.1f, solidObjectsLayer) == null;
     }
+
+    // Converts TilemapType enum → actual Tilemap reference
+    private Tilemap GetTilemap(TilemapType type)
+    {
+        return type switch
+        {
+            TilemapType.Collision => collisionTilemap,
+            TilemapType.WalkBehind => walkBehindTilemap,
+            TilemapType.Ground => groundTilemap,
+            TilemapType.Decoration => decorationTilemap,
+            _ => null
+        };
+    }
+
+    private void BreakTile()
+    {
+        // Cannot pick up new item while holding one
+        if (heldItem != null)
+        {
+            Debug.Log("Already holding item. Press E to store it.");
+            return;
+        }
+
+        Vector3 facing = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+        Vector3Int cellPos = collisionTilemap.WorldToCell(transform.position + facing);
+
+        TileBase tile = collisionTilemap.GetTile(cellPos);
+        if (tile == null)
+            return;
+
+        TileObject obj = objectRegistry.GetObjectForTile(tile);
+        if (obj == null)
+        {
+            Debug.Log("Tile not part of a registered object.");
+            return;
+        }
+
+        heldItemOrigin = cellPos;
+        heldItemMainMap = obj.parts[0].mapType;
+
+        // Break all connected parts
+        foreach (var part in obj.parts)
+        {
+            Tilemap tm = GetTilemap(part.mapType);
+            Vector3Int partPos = cellPos + part.offset;
+
+            if (tm != null)
+                tm.SetTile(partPos, null);
+        }
+
+        // Hold the item above the head
+        heldItem = obj;
+        heldItemRenderer.sprite = obj.icon;
+        heldItemRenderer.enabled = true;
+        heldItemRenderer.gameObject.SetActive(true);
+
+        Debug.Log($"Picked up {obj.objectName} but NOT stored yet.");
+    }
+
+
+
+    private int FindInventorySpace(TileObject obj)
+    {
+        int size = obj.inventorySize;
+
+        for (int i = 0; i <= inventory.Length - size; i++)
+        {
+            bool blockFree = true;
+
+            for (int j = 0; j < size; j++)
+            {
+                if (inventory[i + j] != null)
+                {
+                    blockFree = false;
+                    break;
+                }
+            }
+
+            if (blockFree)
+                return i; // return starting index of the block
+        }
+
+        return -1; // no space
+    }
+
+    private void CommitInventoryAdd(TileObject obj, int startIndex)
+    {
+        int size = obj.inventorySize;
+
+        for (int j = 0; j < size; j++)
+        {
+            inventory[startIndex + j] = obj;
+        }
+
+        Debug.Log($"Added {obj.objectName}, occupying {size} slots.");
+    }
+
+    private void CommitHeldItem()
+    {
+        if (heldItem == null)
+            return;
+
+        // Large items cannot be added
+        if (heldItem.inventorySize > 1)
+        {
+            Debug.Log($"{heldItem.objectName} is too big to fit in the inventory!");
+            return;
+        }
+
+        int slotIndex = FindInventorySpace(heldItem);
+        if (slotIndex == -1)
+        {
+            Debug.Log("Inventory full! Cannot commit item.");
+            return;
+        }
+
+        // Place item
+        CommitInventoryAdd(heldItem, slotIndex);
+
+        // Clear held item
+        heldItemRenderer.enabled = false;
+        heldItem = null;
+        heldItemRenderer.gameObject.SetActive(false);
+
+        Debug.Log("Committed held item to inventory.");
+    }
+    
+    private void DropHeldItem()
+    {
+        if (heldItem == null)
+            return;
+
+        Debug.Log("Dropping held item and restoring tiles: " + heldItem.objectName);
+
+        // Restore all tiles
+        foreach (var part in heldItem.parts)
+        {
+            Tilemap tm = GetTilemap(part.mapType);
+            Vector3Int pos = heldItemOrigin + part.offset;
+
+            if (tm != null)
+                tm.SetTile(pos, part.tile);   // restore original tile
+        }
+
+        heldItemRenderer.enabled = false;
+        heldItemRenderer.gameObject.SetActive(false);
+        heldItem = null;
+    }
+
+
 }
