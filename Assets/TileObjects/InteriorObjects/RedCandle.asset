@@ -17,3 +17,6 @@ MonoBehaviour:
   parts:
   - mapType: 4
     offset: {x: 0, y: 0, z: 0}
+    tile: {fileID: 11400000, guid: 19e194030fa5a0c4c995fe01cc3a10dc, type: 2}
+  inventorySize: 1
+  icon: {fileID: -1058988492983939899, guid: a4efeba5aa833f34ba88636b8edc5305, type: 3}
