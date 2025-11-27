@@ -23,6 +23,7 @@ public class player_controller : MonoBehaviour
     private Vector3Int heldItemOrigin;
     private TilemapType heldItemMainMap;
 
+    public bool canMove = true;
     private bool isMoving;
     private Vector2 input;
 
@@ -36,6 +37,12 @@ public class player_controller : MonoBehaviour
 
     private void Update()
     {
+        if (!canMove) 
+        {
+            animator.SetBool("isMoving", false);
+            return;
+        }
+
         if (!isMoving)
         {
             // get input

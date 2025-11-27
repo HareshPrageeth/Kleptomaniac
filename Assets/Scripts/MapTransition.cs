@@ -8,11 +8,13 @@ public class MapTransition : MonoBehaviour
 {
     [SerializeField] PolygonCollider2D mapBoundary;
     [SerializeField] Direction direction;
+    [SerializeField] Facing facing;
     [SerializeField] Transform teleportTargetLocation;
     [SerializeField] private FadeScreen fadeScreen;
     CinemachineConfiner2D confiner;
 
     enum Direction {Up, Down, Left, Right, Teleport }
+    enum Facing {Up, Down}
 
     private void Awake()
     {
@@ -37,7 +39,17 @@ public class MapTransition : MonoBehaviour
 
         // Play Sound Effect Here
         yield return StartCoroutine(fadeScreen.FadeOut(1f));
-        controller.FaceDirection(new Vector2(0, -1));
+
+        switch(facing)
+        {
+            case Facing.Up:
+                controller.FaceDirection(new Vector2(0, 1));
+                break;
+            case Facing.Down:
+                controller.FaceDirection(new Vector2(0, -1));
+                break;
+        }
+
         confiner.BoundingShape2D = mapBoundary;
         player.transform.position = teleportTargetLocation.position;
         yield return new WaitForSeconds(1f);
