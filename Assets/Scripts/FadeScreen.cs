@@ -6,11 +6,13 @@ public class FadeScreen : MonoBehaviour
 {
     [SerializeField] private Image fadeImage;
 
-    private void Start()
+    private void Awake()
     {
         if (fadeImage != null)
         {
-            StartCoroutine(FadeIn(1f));
+            Color c = fadeImage.color;
+            c.a = 0f;
+            fadeImage.color = c;
         }
     }
 
