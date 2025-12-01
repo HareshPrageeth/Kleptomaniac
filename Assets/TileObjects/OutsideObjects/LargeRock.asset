@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb136113fa062045a63cc6a17aea098, type: 3}
+  m_Name: LargeRock
+  m_EditorClassIdentifier: Assembly-CSharp::TileObject
+  objectName: Large Rock
+  mainTile: {fileID: 11400000, guid: 182976c91546fdf4883bff41acc88b82, type: 2}
+  parts:
+  - mapType: 0
+    offset: {x: 0, y: 0, z: 0}
+    tile: {fileID: 11400000, guid: 182976c91546fdf4883bff41acc88b82, type: 2}
+  - mapType: 0
+    offset: {x: 1, y: 0, z: 0}
+    tile: {fileID: 11400000, guid: 0770327f28d22ab4a90364322beec695, type: 2}
+  - mapType: 0
+    offset: {x: 0, y: 1, z: 0}
+    tile: {fileID: 11400000, guid: 983b1d68c5087ae4b84a9fb66948914a, type: 2}
+  - mapType: 0
+    offset: {x: 1, y: 1, z: 0}
+    tile: {fileID: 11400000, guid: 6a54c6015d8ac0444b79f2d5c8c9f53a, type: 2}
+  inventorySize: 2
+  icon: {fileID: -6291533992411055205, guid: 693c39d5d8fe2774a9463bd9de9e4cc0, type: 3}
