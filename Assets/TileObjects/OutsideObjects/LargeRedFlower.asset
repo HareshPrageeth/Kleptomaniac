@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb136113fa062045a63cc6a17aea098, type: 3}
+  m_Name: LargeRedFlower
+  m_EditorClassIdentifier: Assembly-CSharp::TileObject
+  objectName: Large Red Flower
+  mainTile: {fileID: 11400000, guid: a587cd121dd16e54db2f7363171d3ce8, type: 2}
+  parts:
+  - mapType: 4
+    offset: {x: 0, y: 0, z: 0}
+    tile: {fileID: 11400000, guid: a587cd121dd16e54db2f7363171d3ce8, type: 2}
+  - mapType: 4
+    offset: {x: 1, y: 0, z: 0}
+    tile: {fileID: 11400000, guid: 7f0aca0d466434b439653fe33bb3e5bc, type: 2}
+  - mapType: 1
+    offset: {x: 0, y: 1, z: 0}
+    tile: {fileID: 11400000, guid: 4fc3668d2a93a464aad6f15c4bb5965f, type: 2}
+  - mapType: 1
+    offset: {x: 1, y: 1, z: 0}
+    tile: {fileID: 11400000, guid: c048700d1733c0e468477de1fcf48a19, type: 2}
+  inventorySize: 1
+  icon: {fileID: -5196060236583434122, guid: 693c39d5d8fe2774a9463bd9de9e4cc0, type: 3}

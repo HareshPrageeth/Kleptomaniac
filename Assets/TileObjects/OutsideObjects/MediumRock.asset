@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb136113fa062045a63cc6a17aea098, type: 3}
+  m_Name: MediumRock
+  m_EditorClassIdentifier: Assembly-CSharp::TileObject
+  objectName: Medium Rock
+  mainTile: {fileID: 11400000, guid: 9ef35e4b128803d44aa8144f34024fea, type: 2}
+  parts:
+  - mapType: 0
+    offset: {x: 0, y: 0, z: 0}
+    tile: {fileID: 11400000, guid: 9ef35e4b128803d44aa8144f34024fea, type: 2}
+  inventorySize: 1
+  icon: {fileID: -8454385276824250766, guid: 693c39d5d8fe2774a9463bd9de9e4cc0, type: 3}

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb136113fa062045a63cc6a17aea098, type: 3}
+  m_Name: Tree
+  m_EditorClassIdentifier: Assembly-CSharp::TileObject
+  objectName: Tree
+  mainTile: {fileID: 11400000, guid: b058a3acacf520f499d7e311bdacaaaa, type: 2}
+  parts:
+  - mapType: 0
+    offset: {x: 0, y: 0, z: 0}
+    tile: {fileID: 11400000, guid: b058a3acacf520f499d7e311bdacaaaa, type: 2}
+  - mapType: 0
+    offset: {x: 1, y: 0, z: 0}
+    tile: {fileID: 11400000, guid: 600375b39d8928046bf192f34c235bb4, type: 2}
+  - mapType: 1
+    offset: {x: 0, y: 1, z: 0}
+    tile: {fileID: 11400000, guid: 3772a0793c7199e459ca3b4a1d00b248, type: 2}
+  - mapType: 1
+    offset: {x: 1, y: 1, z: 0}
+    tile: {fileID: 11400000, guid: c1c4d00fd4e41bf4d8b707257c2be89f, type: 2}
+  - mapType: 1
+    offset: {x: 0, y: 2, z: 0}
+    tile: {fileID: 11400000, guid: 2b87ef580ba3ceb43b56ff63ccee8372, type: 2}
+  - mapType: 1
+    offset: {x: 1, y: 2, z: 0}
+    tile: {fileID: 11400000, guid: da082d19c68e68e4fa1175de6022d185, type: 2}
+  - mapType: 4
+    offset: {x: 0, y: -1, z: 0}
+    tile: {fileID: 11400000, guid: 7528bc29625ed6447a3b398ecff3f9cd, type: 2}
+  - mapType: 4
+    offset: {x: 1, y: -1, z: 0}
+    tile: {fileID: 11400000, guid: 7298229b76d7cba439567d9113471a5c, type: 2}
+  inventorySize: 2
+  icon: {fileID: -6927793014847252990, guid: 8d8cad6bcedae7e40ade3121617bfa1e, type: 3}
