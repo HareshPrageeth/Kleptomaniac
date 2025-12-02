@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class player_suspicion : MonoBehaviour
 {
     public float suspicionLevel = 0.0f;
     public float maxSuspicionLevel = 100.0f;
+    public Slider suspicionSlider;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +19,12 @@ public class player_suspicion : MonoBehaviour
         
     }
 
+    void Awake()
+    {
+        suspicionSlider.maxValue = maxSuspicionLevel;
+        suspicionSlider.value = suspicionLevel;
+    }
+
     public void IncreaseSuspicion(float amount)
     {
         suspicionLevel += amount;
@@ -23,6 +32,7 @@ public class player_suspicion : MonoBehaviour
         {
             suspicionLevel = maxSuspicionLevel;
         }
+        suspicionSlider.value = suspicionLevel;
     }
 
     public void DecreaseSuspicion(float amount)
@@ -32,5 +42,6 @@ public class player_suspicion : MonoBehaviour
         {
             suspicionLevel = 0;
         }
+        suspicionSlider.value = suspicionLevel;
     }
 }
