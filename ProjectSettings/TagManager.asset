@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -49,6 +50,9 @@ TagManager:
     locked: 0
   - name: Collision
     uniqueID: 3163941479
+    locked: 0
+  - name: VisionCone
+    uniqueID: 3170653139
     locked: 0
   - name: Player
     uniqueID: 3550857765

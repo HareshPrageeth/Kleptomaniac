@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,12 +118,12 @@ TextureImporter:
       name: Cute_Fantasy_Font_5x9_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 18
-        width: 40
-        height: 18
+        x: 1
+        y: 30
+        width: 3
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: Cute_Fantasy_Font_5x9_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 25
-        height: 7
+        x: 5
+        y: 27
+        width: 5
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: Cute_Fantasy_Font_5x9_2
       rect:
         serializedVersion: 2
-        x: 25
-        y: 2
-        width: 55
-        height: 34
+        x: 10
+        y: 27
+        width: 5
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: Cute_Fantasy_Font_5x9_3
       rect:
         serializedVersion: 2
-        x: 75
-        y: 29
-        width: 15
-        height: 7
+        x: 15
+        y: 27
+        width: 5
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: Cute_Fantasy_Font_5x9_4
       rect:
         serializedVersion: 2
-        x: 75
-        y: 18
-        width: 15
-        height: 7
+        x: 20
+        y: 27
+        width: 5
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: Cute_Fantasy_Font_5x9_5
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1
-        width: 64
-        height: 35
+        x: 25
+        y: 27
+        width: 5
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -246,11 +246,1661 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_6
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb2a828e33f0924cb43830713a8fb09
+      internalID: -1652850533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_7
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a028b179e8eac44b41d62fe0113f75
+      internalID: -1733173631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_8
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d29afb7c2ed7a2498cf74037aee6376
+      internalID: 1434153148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_9
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f14322071815a449a5a0b014483fe46
+      internalID: 305828258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8def32dd92a33e2479e85b7db22f9c05
+      internalID: 1609254953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_11
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78d248f02907fe46ac48ccb8cc88da4
+      internalID: -2126419948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3071ffe7cd265584f8ee3a99ff2bc6f9
+      internalID: 768855439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d10eb292f52a7a449c02b0622a1413a
+      internalID: -1888093270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6335b453a071a4f86a1c25406839ff
+      internalID: 893038136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_15
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0e29f97e9c0c84a9a2b32b3ac4b8e9
+      internalID: 1411899366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_16
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b9509710eb73345a63c5c589892542
+      internalID: -1826640240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b1c01987eb7c24a91cae5d1f837559
+      internalID: 1778466901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_18
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f650c6014ec4f41acd5bda35e95a01
+      internalID: 533972115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_19
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce7ae869f0589346a72a63290a635c8
+      internalID: 157052434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8945929983ae894289d6f343e1e49c4
+      internalID: 1230177226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_21
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a597deeb8a5d1f489fbdf6cdef0b6b8
+      internalID: 2119477267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_22
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71200feaf75b6f2408e68d3096c181fd
+      internalID: -14470371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_23
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7946e009d5442664d8e7d157354de4df
+      internalID: -2018917372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_24
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb69dbc6df4c44443bd77fd4d1cc8992
+      internalID: -1464797944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_25
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 27
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081cea42c6b92a6489e1547837361592
+      internalID: -241137305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bccc4035d8405b4e98eef2ca4c1c370
+      internalID: 1305167176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_27
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa55108f1fe2dc141a7fcbf66d705290
+      internalID: 478517785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_28
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559b01bf18cffe64790f127dd303790f
+      internalID: 596062566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_29
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f614c0ea47774148b8022cf612086b6
+      internalID: -2062220983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_30
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c177323792b1d48874996b2196c2bb
+      internalID: -1264807819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_31
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b70917f69fd04c4b9e2f0399f0223a1
+      internalID: -1195924082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_32
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d965577cafa544ea5ac048e430c4c0
+      internalID: 998027955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_33
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04dd894861032af4b9ef0391bc41fde1
+      internalID: -1163595702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_34
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39075d36e743ce438849f324d7505c3
+      internalID: 283081316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_35
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1b30aaa16d3bb4fac77e2d7186c89e
+      internalID: 660231483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_36
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79263f5e2773afc4385c317f1c9fa14a
+      internalID: -716375537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_37
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ad4acf9925fbc46a83776474d065fa
+      internalID: -897083509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_38
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f33de5f6a163ad47bf066163857a77c
+      internalID: 515118474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_39
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3450a8b52a4c149acf8c8b588d29b3
+      internalID: 1436741037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_40
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49845eae2cc0304d9245f0d274b604f
+      internalID: -1569593313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_41
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511c7d56c97bc534e9e9ae586ffe78a8
+      internalID: -1862034371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_42
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2427691cb4ab32247b1a286800c9be0f
+      internalID: 895295458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_43
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1e5ac41eb538446bee292843297ee5
+      internalID: 2094282589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_44
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452ab2d4a154ec9478be932f956f8cc6
+      internalID: -29660268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_45
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190179f44acbcda4cb0e11bb59318cbb
+      internalID: -1209671088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_46
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6900e94d902d9498b870f7670e4386
+      internalID: -1654807108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_47
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ca43a8a94537a48a6e74e2d44bbd20
+      internalID: -1525729366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_48
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea91811af4fa3f428cbe76df1354bac
+      internalID: -898685831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_49
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a402aada072d438479ac006113eb9a3c
+      internalID: -1281833144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_50
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6172349e921254c9ea2cd5a866e54c
+      internalID: 1453409798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_51
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 18
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14c338703d9fc5448d63e48c9ee2694
+      internalID: -9776748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241e64ad3d5083b41a4db4e5e1fe927b
+      internalID: -1731585574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_53
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e553cfaf6475ea4ea44ff8afa8968a5
+      internalID: -77069053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_54
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2175c0c24ddfd4c886e8d0db9fe2e6
+      internalID: -1151324444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_55
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d22128767308b1479314c48d5840c59
+      internalID: -1374167857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_56
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fc0c299e710da4694f9af92279a154
+      internalID: -1893080614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_57
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58df3d334d301d488ddbbd39cc7a31c
+      internalID: -665531461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_58
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98c7fe6240472d48801c514854c3cde
+      internalID: -287484780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_59
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ada89f70b80763499d6b4547b47f86e
+      internalID: 639023080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_60
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e0a70760428b64783aeb7624c2451c
+      internalID: 1954288706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_61
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadba9c3175de64449a2481cb5b3625d
+      internalID: -843078270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_62
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8130cd26f18aa14bb57a27de5eb9ce5
+      internalID: 66111629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_63
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2143fc1352feccd4cb24b9b6f65144f1
+      internalID: 669616732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_64
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb28cb01a2eeea4eb00f4f972768e12
+      internalID: 1107864411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_65
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a63496e5a980be4387636021c62d57e
+      internalID: 1419676647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_66
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ea8c5f81306ed43803cdb8e39f1f46
+      internalID: 32919962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_67
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92befd6b51fc4c94db3a718c21820d25
+      internalID: -1208187253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_68
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51aa5ca1e548eb44b823fc3f2216fe6
+      internalID: -1260753527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_69
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74efe7144be4a524282767567b235025
+      internalID: 372433242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_70
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5abb50898e8c7d45984e107e8077333
+      internalID: 462395093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_71
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83fbd152f4e25a4bbe2d9505433621e
+      internalID: -1839534389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_72
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01087535f88b17e4f93836df4355a011
+      internalID: -1528465048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_73
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eba62fdd48de3a44a86187100ed5674
+      internalID: 589350124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_74
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8563b70edda4f438613bf276355cbf
+      internalID: 601900622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_75
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da15b29d3c34c04429ba846948cdb498
+      internalID: -639268140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_76
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fa0cf6ffeff7e4694a9c854bca8820
+      internalID: 2141027249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_77
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2537a29e601d14bb97f137821ea22c
+      internalID: 1244028771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_78
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a28453b50b57614ab3bc8919379d76e
+      internalID: -1187139749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_79
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362262f5fbd4d114381a0d7e07ccaf77
+      internalID: -158553489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute_Fantasy_Font_5x9_80
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd668270badb6b4f8309bcd5d1fab92
+      internalID: 1216649329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 41266a77ee31fd14b8b7c9e61f430ac9
     internalID: 0
     vertices: []
     indices: 
@@ -258,14 +1908,91 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":5.0,"y":9.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Cute_Fantasy_Font_5x9_0: 6581396535396653412
       Cute_Fantasy_Font_5x9_1: -8245591560116989639
+      Cute_Fantasy_Font_5x9_10: 1609254953
+      Cute_Fantasy_Font_5x9_11: -2126419948
+      Cute_Fantasy_Font_5x9_12: 768855439
+      Cute_Fantasy_Font_5x9_13: -1888093270
+      Cute_Fantasy_Font_5x9_14: 893038136
+      Cute_Fantasy_Font_5x9_15: 1411899366
+      Cute_Fantasy_Font_5x9_16: -1826640240
+      Cute_Fantasy_Font_5x9_17: 1778466901
+      Cute_Fantasy_Font_5x9_18: 533972115
+      Cute_Fantasy_Font_5x9_19: 157052434
       Cute_Fantasy_Font_5x9_2: 5730251805715937053
+      Cute_Fantasy_Font_5x9_20: 1230177226
+      Cute_Fantasy_Font_5x9_21: 2119477267
+      Cute_Fantasy_Font_5x9_22: -14470371
+      Cute_Fantasy_Font_5x9_23: -2018917372
+      Cute_Fantasy_Font_5x9_24: -1464797944
+      Cute_Fantasy_Font_5x9_25: -241137305
+      Cute_Fantasy_Font_5x9_26: 1305167176
+      Cute_Fantasy_Font_5x9_27: 478517785
+      Cute_Fantasy_Font_5x9_28: 596062566
+      Cute_Fantasy_Font_5x9_29: -2062220983
       Cute_Fantasy_Font_5x9_3: 867327027970865507
+      Cute_Fantasy_Font_5x9_30: -1264807819
+      Cute_Fantasy_Font_5x9_31: -1195924082
+      Cute_Fantasy_Font_5x9_32: 998027955
+      Cute_Fantasy_Font_5x9_33: -1163595702
+      Cute_Fantasy_Font_5x9_34: 283081316
+      Cute_Fantasy_Font_5x9_35: 660231483
+      Cute_Fantasy_Font_5x9_36: -716375537
+      Cute_Fantasy_Font_5x9_37: -897083509
+      Cute_Fantasy_Font_5x9_38: 515118474
+      Cute_Fantasy_Font_5x9_39: 1436741037
       Cute_Fantasy_Font_5x9_4: 1315906008839408952
+      Cute_Fantasy_Font_5x9_40: -1569593313
+      Cute_Fantasy_Font_5x9_41: -1862034371
+      Cute_Fantasy_Font_5x9_42: 895295458
+      Cute_Fantasy_Font_5x9_43: 2094282589
+      Cute_Fantasy_Font_5x9_44: -29660268
+      Cute_Fantasy_Font_5x9_45: -1209671088
+      Cute_Fantasy_Font_5x9_46: -1654807108
+      Cute_Fantasy_Font_5x9_47: -1525729366
+      Cute_Fantasy_Font_5x9_48: -898685831
+      Cute_Fantasy_Font_5x9_49: -1281833144
       Cute_Fantasy_Font_5x9_5: 4184115676813360854
+      Cute_Fantasy_Font_5x9_50: 1453409798
+      Cute_Fantasy_Font_5x9_51: -9776748
+      Cute_Fantasy_Font_5x9_52: -1731585574
+      Cute_Fantasy_Font_5x9_53: -77069053
+      Cute_Fantasy_Font_5x9_54: -1151324444
+      Cute_Fantasy_Font_5x9_55: -1374167857
+      Cute_Fantasy_Font_5x9_56: -1893080614
+      Cute_Fantasy_Font_5x9_57: -665531461
+      Cute_Fantasy_Font_5x9_58: -287484780
+      Cute_Fantasy_Font_5x9_59: 639023080
+      Cute_Fantasy_Font_5x9_6: -1652850533
+      Cute_Fantasy_Font_5x9_60: 1954288706
+      Cute_Fantasy_Font_5x9_61: -843078270
+      Cute_Fantasy_Font_5x9_62: 66111629
+      Cute_Fantasy_Font_5x9_63: 669616732
+      Cute_Fantasy_Font_5x9_64: 1107864411
+      Cute_Fantasy_Font_5x9_65: 1419676647
+      Cute_Fantasy_Font_5x9_66: 32919962
+      Cute_Fantasy_Font_5x9_67: -1208187253
+      Cute_Fantasy_Font_5x9_68: -1260753527
+      Cute_Fantasy_Font_5x9_69: 372433242
+      Cute_Fantasy_Font_5x9_7: -1733173631
+      Cute_Fantasy_Font_5x9_70: 462395093
+      Cute_Fantasy_Font_5x9_71: -1839534389
+      Cute_Fantasy_Font_5x9_72: -1528465048
+      Cute_Fantasy_Font_5x9_73: 589350124
+      Cute_Fantasy_Font_5x9_74: 601900622
+      Cute_Fantasy_Font_5x9_75: -639268140
+      Cute_Fantasy_Font_5x9_76: 2141027249
+      Cute_Fantasy_Font_5x9_77: 1244028771
+      Cute_Fantasy_Font_5x9_78: -1187139749
+      Cute_Fantasy_Font_5x9_79: -158553489
+      Cute_Fantasy_Font_5x9_8: 1434153148
+      Cute_Fantasy_Font_5x9_80: 1216649329
+      Cute_Fantasy_Font_5x9_9: 305828258
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

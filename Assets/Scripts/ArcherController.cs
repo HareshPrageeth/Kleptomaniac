@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class enemy_controller : MonoBehaviour
+public class ArcherController : MonoBehaviour
 {
     // Patrolling Variables
     public Transform[] waypoints;
@@ -30,20 +30,22 @@ public class enemy_controller : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private Vector2 lastMoveDir = Vector2.zero;
-    public float stopDistance = 0.5f;
+    public float stopDistance = 10f;
 
-    public int damage = 1;
     public float attackCooldown = 1.0f;
 
     private float attackTimer = 0.0f;
-    private PlayerHealth targetHealth;
 
     public LayerMask solidObjectsLayer;
-    public float attackRange = 0.7f;
+    public float attackRange = 10f;
+
+    public GameObject arrowPrefab;
+    public Transform firePoint;
+    public float arrowSpeed = 10f;
 
     private AudioSource audioSource;
-    public AudioClip attackSound;
-
+    public AudioClip shootSound;
+    public AudioClip hmmSound;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -308,49 +310,65 @@ public class enemy_controller : MonoBehaviour
 
     private void UpdateAnimator()
     {
-        if (animator == null) 
-        {
-            return;
-        }
+        if (animator == null)
+        return;
 
         bool isMoving = lastMoveDir.sqrMagnitude > 0.001f;
         animator.SetBool("isMoving", isMoving);
 
-        int direction = animator.GetInteger("direction"); // keep last direction if not moving
+        int direction = animator.GetInteger("direction"); // keep last if nothing new
+        Vector2 refDir;
 
         if (isMoving)
         {
-            Vector2 moveDir = lastMoveDir.normalized;
-
-            if (Mathf.Abs(moveDir.x) > Mathf.Abs(moveDir.y))
-            {
-                direction = 2; // side
-                Vector3 scale = transform.localScale;
-                scale.x = Mathf.Sign(moveDir.x) * Mathf.Abs(scale.x);
-                transform.localScale = scale;
-            }
-            else
-            {
-                direction = (moveDir.y > 0) ? 1 : 0; // back / forward
-            }
-
-            animator.SetInteger("direction", direction);
-            UpdateVisionConeDirection(moveDir);
+            // Use movement direction
+            refDir = lastMoveDir.normalized;
         }
-    }
-
-
-    private void UpdateVisionConeDirection(Vector2 moveDir)
-    {
-        if(visionCone != null)
+        else if (player != null && (currentVisionState == VisionState.ALERT || currentVisionState == VisionState.CHASE))
         {
-            if(lastMoveDir.sqrMagnitude < 0.001f)
-            {
-                return;
-            }
-           float angle = Mathf.Atan2(moveDir.y, moveDir.x) * Mathf.Rad2Deg;
-            visionCone.rotation = Quaternion.Euler(0, 0, angle + 90);
+            // Not moving but watching the player - use vector to player
+            refDir = ((Vector2)player.position - (Vector2)transform.position).normalized;
         }
+        else
+        {
+            // Not moving and no player to face - nothing to update
+            return;
+        }
+
+        // Decide which animation direction to use
+        if (Mathf.Abs(refDir.x) > Mathf.Abs(refDir.y))
+        {
+            direction = 2; // side
+
+            // flip left/right
+            Vector3 scale = transform.localScale;
+            scale.x = Mathf.Sign(refDir.x) * Mathf.Abs(scale.x);
+            transform.localScale = scale;
+        }
+        else
+        {
+            // up or down
+            direction = (refDir.y > 0) ? 1 : 0; // back / forward
+        }
+
+        animator.SetInteger("direction", direction);
+
+        // Also update the cone to match this reference direction
+        UpdateVisionConeDirection(refDir);
+    }
+    
+
+
+    private void UpdateVisionConeDirection(Vector2 dir)
+    {
+        if (visionCone == null)
+        return;
+
+        if (dir.sqrMagnitude < 0.001f)
+            return;
+
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        visionCone.rotation = Quaternion.Euler(0, 0, angle + 90);
     }
 
     private void HandleAttack()
@@ -362,7 +380,6 @@ public class enemy_controller : MonoBehaviour
         if (player == null)
             return;
 
-        targetHealth = player.GetComponent<PlayerHealth>();
         float dist = Vector2.Distance(transform.position, player.position);
 
         bool canAttack = currentVisionState == VisionState.CHASE && dist <= attackRange;
@@ -372,15 +389,35 @@ public class enemy_controller : MonoBehaviour
             // Trigger animation
             if (animator != null)
             {
-                animator.SetTrigger("Attack");
+                animator.SetTrigger("attack");
             }
 
-
-            targetHealth.TakeDamage(damage);
-            audioSource.PlayOneShot(attackSound);
+            // Fire arrow
+            ShootArrow();
 
             // Reset cooldown
             attackTimer = attackCooldown;
         }
+    }
+
+    private void ShootArrow()
+    {
+        if(arrowPrefab == null || firePoint == null || player == null)
+        {
+            return;
+        }
+
+        Vector2 dir = ((Vector2)player.position - (Vector2)firePoint.position).normalized;
+        GameObject arrow = Instantiate(arrowPrefab, firePoint.position, Quaternion.identity);
+
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        arrow.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        Arrow_Controller arrowScript = arrow.GetComponent<Arrow_Controller>();
+        if(arrowScript != null)
+        {
+            arrowScript.Initialize(dir, arrowSpeed);
+        }
+        audioSource.PlayOneShot(shootSound);
     }
 }
