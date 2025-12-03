@@ -154,7 +154,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -168,7 +168,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -192,7 +192,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -220,12 +220,12 @@ TextureImporter:
       name: Chef_Chloe_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 406
-        width: 15
-        height: 30
+        x: 25
+        y: 407
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -242,12 +242,12 @@ TextureImporter:
       name: Chef_Chloe_1
       rect:
         serializedVersion: 2
-        x: 88
-        y: 406
-        width: 15
-        height: 30
+        x: 89
+        y: 407
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -264,12 +264,12 @@ TextureImporter:
       name: Chef_Chloe_2
       rect:
         serializedVersion: 2
-        x: 152
-        y: 406
-        width: 15
-        height: 29
+        x: 153
+        y: 407
+        width: 13
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -286,12 +286,12 @@ TextureImporter:
       name: Chef_Chloe_3
       rect:
         serializedVersion: 2
-        x: 216
-        y: 406
-        width: 15
-        height: 29
+        x: 217
+        y: 407
+        width: 13
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -308,12 +308,12 @@ TextureImporter:
       name: Chef_Chloe_4
       rect:
         serializedVersion: 2
-        x: 280
-        y: 406
-        width: 15
-        height: 30
+        x: 281
+        y: 407
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -330,12 +330,12 @@ TextureImporter:
       name: Chef_Chloe_5
       rect:
         serializedVersion: 2
-        x: 344
-        y: 406
-        width: 15
-        height: 30
+        x: 345
+        y: 407
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -352,12 +352,12 @@ TextureImporter:
       name: Chef_Chloe_6
       rect:
         serializedVersion: 2
-        x: 24
-        y: 342
-        width: 16
-        height: 30
+        x: 25
+        y: 343
+        width: 14
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -374,12 +374,12 @@ TextureImporter:
       name: Chef_Chloe_7
       rect:
         serializedVersion: 2
-        x: 88
-        y: 342
-        width: 16
-        height: 30
+        x: 89
+        y: 343
+        width: 14
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -396,12 +396,12 @@ TextureImporter:
       name: Chef_Chloe_8
       rect:
         serializedVersion: 2
-        x: 152
-        y: 342
-        width: 16
-        height: 29
+        x: 153
+        y: 343
+        width: 14
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -418,12 +418,12 @@ TextureImporter:
       name: Chef_Chloe_9
       rect:
         serializedVersion: 2
-        x: 216
-        y: 342
-        width: 16
-        height: 29
+        x: 217
+        y: 343
+        width: 14
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -440,12 +440,12 @@ TextureImporter:
       name: Chef_Chloe_10
       rect:
         serializedVersion: 2
-        x: 280
-        y: 342
-        width: 16
-        height: 30
+        x: 281
+        y: 343
+        width: 14
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -462,12 +462,12 @@ TextureImporter:
       name: Chef_Chloe_11
       rect:
         serializedVersion: 2
-        x: 344
-        y: 342
-        width: 16
-        height: 30
+        x: 345
+        y: 343
+        width: 14
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -484,12 +484,12 @@ TextureImporter:
       name: Chef_Chloe_12
       rect:
         serializedVersion: 2
-        x: 24
-        y: 278
-        width: 15
-        height: 30
+        x: 25
+        y: 279
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -506,12 +506,12 @@ TextureImporter:
       name: Chef_Chloe_13
       rect:
         serializedVersion: 2
-        x: 88
-        y: 278
-        width: 15
-        height: 30
+        x: 89
+        y: 279
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -528,12 +528,12 @@ TextureImporter:
       name: Chef_Chloe_14
       rect:
         serializedVersion: 2
-        x: 152
-        y: 278
-        width: 15
-        height: 29
+        x: 153
+        y: 279
+        width: 13
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -550,12 +550,12 @@ TextureImporter:
       name: Chef_Chloe_15
       rect:
         serializedVersion: 2
-        x: 216
-        y: 278
-        width: 15
-        height: 29
+        x: 217
+        y: 279
+        width: 13
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -572,12 +572,12 @@ TextureImporter:
       name: Chef_Chloe_16
       rect:
         serializedVersion: 2
-        x: 280
-        y: 278
-        width: 15
-        height: 30
+        x: 281
+        y: 279
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -594,12 +594,12 @@ TextureImporter:
       name: Chef_Chloe_17
       rect:
         serializedVersion: 2
-        x: 344
-        y: 278
-        width: 15
-        height: 30
+        x: 345
+        y: 279
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -616,12 +616,12 @@ TextureImporter:
       name: Chef_Chloe_18
       rect:
         serializedVersion: 2
-        x: 24
-        y: 214
-        width: 15
-        height: 32
+        x: 25
+        y: 215
+        width: 13
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -638,12 +638,12 @@ TextureImporter:
       name: Chef_Chloe_19
       rect:
         serializedVersion: 2
-        x: 88
-        y: 214
-        width: 15
-        height: 31
+        x: 89
+        y: 215
+        width: 13
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -660,12 +660,12 @@ TextureImporter:
       name: Chef_Chloe_20
       rect:
         serializedVersion: 2
-        x: 152
-        y: 214
-        width: 15
-        height: 30
+        x: 153
+        y: 215
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -682,12 +682,12 @@ TextureImporter:
       name: Chef_Chloe_21
       rect:
         serializedVersion: 2
-        x: 216
-        y: 214
-        width: 15
-        height: 32
+        x: 217
+        y: 215
+        width: 13
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -704,12 +704,12 @@ TextureImporter:
       name: Chef_Chloe_22
       rect:
         serializedVersion: 2
-        x: 280
-        y: 214
-        width: 15
-        height: 31
+        x: 281
+        y: 215
+        width: 13
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -726,12 +726,12 @@ TextureImporter:
       name: Chef_Chloe_23
       rect:
         serializedVersion: 2
-        x: 344
-        y: 214
-        width: 15
-        height: 30
+        x: 345
+        y: 215
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -748,12 +748,12 @@ TextureImporter:
       name: Chef_Chloe_24
       rect:
         serializedVersion: 2
-        x: 24
-        y: 150
-        width: 16
-        height: 32
+        x: 25
+        y: 151
+        width: 14
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -770,12 +770,12 @@ TextureImporter:
       name: Chef_Chloe_25
       rect:
         serializedVersion: 2
-        x: 88
-        y: 150
-        width: 16
-        height: 31
+        x: 89
+        y: 151
+        width: 14
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -792,12 +792,12 @@ TextureImporter:
       name: Chef_Chloe_26
       rect:
         serializedVersion: 2
-        x: 152
-        y: 150
-        width: 16
-        height: 30
+        x: 153
+        y: 151
+        width: 14
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -814,12 +814,12 @@ TextureImporter:
       name: Chef_Chloe_27
       rect:
         serializedVersion: 2
-        x: 216
-        y: 150
-        width: 16
-        height: 32
+        x: 217
+        y: 151
+        width: 14
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -836,12 +836,12 @@ TextureImporter:
       name: Chef_Chloe_28
       rect:
         serializedVersion: 2
-        x: 280
-        y: 150
-        width: 16
-        height: 31
+        x: 281
+        y: 151
+        width: 14
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -858,12 +858,12 @@ TextureImporter:
       name: Chef_Chloe_29
       rect:
         serializedVersion: 2
-        x: 344
-        y: 150
-        width: 16
-        height: 30
+        x: 345
+        y: 151
+        width: 14
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -880,12 +880,12 @@ TextureImporter:
       name: Chef_Chloe_30
       rect:
         serializedVersion: 2
-        x: 24
-        y: 86
-        width: 15
-        height: 32
+        x: 25
+        y: 87
+        width: 13
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -902,12 +902,12 @@ TextureImporter:
       name: Chef_Chloe_31
       rect:
         serializedVersion: 2
-        x: 88
-        y: 86
-        width: 15
-        height: 31
+        x: 89
+        y: 87
+        width: 13
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -924,12 +924,12 @@ TextureImporter:
       name: Chef_Chloe_32
       rect:
         serializedVersion: 2
-        x: 152
-        y: 86
-        width: 15
-        height: 30
+        x: 153
+        y: 87
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -946,12 +946,12 @@ TextureImporter:
       name: Chef_Chloe_33
       rect:
         serializedVersion: 2
-        x: 216
-        y: 86
-        width: 15
-        height: 32
+        x: 217
+        y: 87
+        width: 13
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -968,12 +968,12 @@ TextureImporter:
       name: Chef_Chloe_34
       rect:
         serializedVersion: 2
-        x: 280
-        y: 86
-        width: 15
-        height: 31
+        x: 281
+        y: 87
+        width: 13
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -990,12 +990,12 @@ TextureImporter:
       name: Chef_Chloe_35
       rect:
         serializedVersion: 2
-        x: 344
-        y: 86
-        width: 15
-        height: 30
+        x: 345
+        y: 87
+        width: 13
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1012,12 +1012,12 @@ TextureImporter:
       name: Chef_Chloe_36
       rect:
         serializedVersion: 2
-        x: 24
-        y: 22
-        width: 16
-        height: 30
+        x: 25
+        y: 23
+        width: 14
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1034,12 +1034,12 @@ TextureImporter:
       name: Chef_Chloe_37
       rect:
         serializedVersion: 2
-        x: 89
-        y: 22
-        width: 17
-        height: 28
+        x: 90
+        y: 23
+        width: 15
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1056,12 +1056,12 @@ TextureImporter:
       name: Chef_Chloe_38
       rect:
         serializedVersion: 2
-        x: 153
-        y: 22
-        width: 19
-        height: 26
+        x: 154
+        y: 23
+        width: 17
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1078,12 +1078,12 @@ TextureImporter:
       name: Chef_Chloe_39
       rect:
         serializedVersion: 2
-        x: 217
-        y: 22
-        width: 19
-        height: 25
+        x: 218
+        y: 23
+        width: 17
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1100,7 +1100,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: abedf897cf63a6741a459071561560ab
     internalID: 0
     vertices: []
     indices: 
@@ -1108,7 +1108,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Chef_Chloe_0: 1133016023677713945
       Chef_Chloe_1: -246137980587302129
