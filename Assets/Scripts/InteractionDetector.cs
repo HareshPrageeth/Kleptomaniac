@@ -5,6 +5,7 @@ public class InteractionDetector : MonoBehaviour
 {
     private Interactable interactableInRange;
     private GameObject currentInteractionObject = null, interactionDots;
+    public GameObject talkPanel;
    void Update()
     {
         if (Keyboard.current.iKey.wasPressedThisFrame)
@@ -16,6 +17,8 @@ public class InteractionDetector : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Press I to interact.");
+        talkPanel.SetActive(true);
+
         if(collision.TryGetComponent(out Interactable interactable) && interactable.CanInteract())
         {
             if (currentInteractionObject != null)
@@ -43,5 +46,6 @@ public class InteractionDetector : MonoBehaviour
             currentInteractionObject = null;
             interactionDots = null;
         }
+        talkPanel.SetActive(false);
     }
 }

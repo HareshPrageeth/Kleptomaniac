@@ -7,6 +7,8 @@ public class DropoffPoint : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip goldSound;
 
+    public GameObject stashPanel;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -20,6 +22,8 @@ public class DropoffPoint : MonoBehaviour
         {
             player = other.GetComponent<player_controller>();
         }
+
+        stashPanel.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -29,6 +33,8 @@ public class DropoffPoint : MonoBehaviour
         {
             player = null;
         }
+
+        stashPanel.SetActive(false);
     }
 
     private void Update()
