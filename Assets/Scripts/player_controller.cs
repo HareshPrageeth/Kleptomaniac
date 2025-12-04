@@ -180,6 +180,13 @@ public class player_controller : MonoBehaviour
         {
             commitPanel.SetActive(true);
         }
+
+        if (heldItem.name == "Crown")
+        {
+            Debug.Log("You WIN");
+            SceneLoader.Instance.SwitchScene("YouWin");
+        }
+
         dropPanel.SetActive(true);
 
         Debug.Log($"Picked up {obj.objectName} but not stored yet.");
