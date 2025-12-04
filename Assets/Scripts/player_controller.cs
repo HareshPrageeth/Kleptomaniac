@@ -32,11 +32,14 @@ public class player_controller : MonoBehaviour
     private Vector2 input;
 
     private Animator animator;
+    private AudioSource audioSource;
+    public AudioClip pickupSound;
 
     private void Start()
     {
         heldItemRenderer.enabled = false;
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -161,6 +164,8 @@ public class player_controller : MonoBehaviour
             if (tm != null)
                 tm.SetTile(partPos, null);
         }
+
+        audioSource.PlayOneShot(pickupSound);
 
         // Hold the item above the head
         heldItem = obj;
