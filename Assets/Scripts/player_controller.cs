@@ -24,6 +24,9 @@ public class player_controller : MonoBehaviour
     public int gold = 0;
     public  TextMeshProUGUI goldText;
 
+    public GameObject commitPanel;
+    public GameObject dropPanel;
+
     private Vector3Int heldItemOrigin;
     private TilemapType heldItemMainMap;
 
@@ -173,6 +176,12 @@ public class player_controller : MonoBehaviour
         heldItemRenderer.enabled = true;
         heldItemRenderer.gameObject.SetActive(true);
 
+        if (heldItem.inventorySize == 1)
+        {
+            commitPanel.SetActive(true);
+        }
+        dropPanel.SetActive(true);
+
         Debug.Log($"Picked up {obj.objectName} but not stored yet.");
     }
 
@@ -212,6 +221,8 @@ public class player_controller : MonoBehaviour
         }
 
         Debug.Log($"Added {obj.objectName}");
+        commitPanel.SetActive(false);
+        dropPanel.SetActive(false);
     }
 
     private void CommitHeldItem()
@@ -264,6 +275,9 @@ public class player_controller : MonoBehaviour
         heldItemRenderer.enabled = false;
         heldItemRenderer.gameObject.SetActive(false);
         heldItem = null;
+
+        commitPanel.SetActive(false);
+        dropPanel.SetActive(false);
     }
 
     public void ResetMovement()
