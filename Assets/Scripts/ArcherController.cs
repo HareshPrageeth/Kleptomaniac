@@ -47,6 +47,7 @@ public class ArcherController : MonoBehaviour
     public AudioClip shootSound;
     public AudioClip hmmSound;
 
+    public float maxChaseDistance = 8f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -171,6 +172,20 @@ public class ArcherController : MonoBehaviour
         Vector3 currentPos = transform.position;
         Vector3 toTarget = player.position - currentPos;
         float distance = toTarget.magnitude;
+
+        if (distance > maxChaseDistance)
+        {
+            currentVisionState = VisionState.PATROL;
+            playerInSight = false;
+            player = null;
+            SetConeScale(baseVisionRange);
+            if (questionMarkIndicator != null)
+            {
+                questionMarkIndicator.SetActive(false);
+            }
+            lastMoveDir = Vector2.zero;
+            return;
+        }
 
         if (distance < stopDistance)
         {
