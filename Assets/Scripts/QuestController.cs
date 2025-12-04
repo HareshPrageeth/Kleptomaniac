@@ -82,7 +82,7 @@ public class QuestController : MonoBehaviour
             QuestName = "Bribe the gaurd",
             ObjectiveItems = new string[] { "Gold" },
             quantized = true,
-            RequiredObjectiveQuantity = new int[] {100 },
+            RequiredObjectiveQuantity = new int[] {100},
             CurrentObjectiveQuantity = new int[] { 0},
             isassigned = false,
             iscompleted = false

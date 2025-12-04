@@ -24,7 +24,9 @@ public class QuestandDialogueManager : MonoBehaviour
         }
         if(flag==2 && QuestController.AllGameQuests[6].iscompleted)
         {
+            player.GetComponent<player_controller>().AddGold(-1 * QuestController.AllGameQuests[6].RequiredObjectiveQuantity[0]);
             castlecollider.SetActive(true);
+            flag = 3;
         }
     
 
