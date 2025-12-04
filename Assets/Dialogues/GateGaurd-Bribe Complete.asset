@@ -10,28 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f32df80fcd9ecd04789b52c360eb0452, type: 3}
-  m_Name: GateGaurd-Quest Complete
+  m_Name: GateGaurd-Bribe Complete
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
   npcName: Gaurd
   npcPortrait: {fileID: -6867757744863099905, guid: 3d73e1b653c5dca478f4bcbda6a0b7f1, type: 3}
   dilaogueLines:
-  - Is that...?
-  - FREDRICK!?
-  - YOU FOUND HIM!
-  - Who's a good little cat?
-  - You're a good little cat... Yes you are..
-  - How could you run off like that?
-  - '*Seems distracted*'
-  autoProgressLines: 01010101010101
-  endDialogueLines: 00000000000001
+  - Wait a minute...
+  - Is that the 100 Gold I asked for?
+  - My goodness, that's quite the pile! It's heavier than I expected!
+  - '*pointedly looks over your shoulder, then clears his throat loudly*'
+  - '*seems distracted by a sudden interest in a bird flying overhead*'
+  autoProgressLines: 0101010101
+  endDialogueLines: 0000000001
   autoProgressDelay: 1.5
   typingSpeed: 0.03
   voiceSound: {fileID: 0}
   voicePitch: 1
   choices:
-  - dialogueIndex: 5
+  - dialogueIndex: 2
     choices:
-    - Um.. hello?
-    nextDialogueIndexes: 06000000
+    - Can I go in?
+    nextDialogueIndexes: 03000000
     QueststoAssign: 
-    QueststoMarkComplete: 03000000
+    QueststoMarkComplete: 06000000

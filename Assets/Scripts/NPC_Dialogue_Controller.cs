@@ -101,17 +101,51 @@ public class NPC_Dialogue_Controller : MonoBehaviour, Interactable
 
     void DisplayChoices(DialogueChoice choice)
     {
+        int[] assignIDs = choice.QueststoAssign ?? new int[0];
+        int[] completeIDs = choice.QueststoMarkComplete ?? new int[0];
+
         for (int i = 0; i < choice.choices.Length; i++)
         {
             int nextIndex = choice.nextDialogueIndexes[i];
-            dialogueUI.CreateChoiceButton(choice.choices[i], () => ChooseOption(nextIndex));
+            dialogueUI.CreateChoiceButton(choice.choices[i], 
+                () => ChooseOption(nextIndex, assignIDs, completeIDs));
         }
     }
-    void ChooseOption(int nextIndex)
+    void ChooseOption(int nextIndex, int[] assign, int[] markcomplete)
     {
+        ExecuteQuestAssignments(assign);
+        ExecuteQuestCompletions(markcomplete);
+
         dialogueIndex = nextIndex;
         dialogueUI.ClearChoices();
         DisplayCurrentLine();
+    }
+    private void ExecuteQuestAssignments(int[] assignIDs)
+    {
+        if (assignIDs != null)
+        {
+            foreach (int questID in assignIDs)
+            {
+                if (questID >= 0)
+                {
+                    QuestController.AssignQuest(questID); 
+                }
+            }
+        }
+    }
+
+    private void ExecuteQuestCompletions(int[] completeIDs)
+    {
+        if (completeIDs != null)
+        {
+            foreach (int questID in completeIDs)
+            {
+                if (questID >= 0)
+                {
+                    QuestController.CompleteQuest(questID);
+                }
+            }
+        }
     }
     void DisplayCurrentLine()
     {

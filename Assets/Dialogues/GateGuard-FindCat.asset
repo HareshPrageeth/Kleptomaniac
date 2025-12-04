@@ -44,3 +44,11 @@ MonoBehaviour:
     choices:
     - Sorry for your loss...
     nextDialogueIndexes: 0a000000
+    QueststoAssign: 
+    QueststoMarkComplete: 
+  - dialogueIndex: 15
+    choices:
+    - I'm sure he'll turn up
+    nextDialogueIndexes: 10000000
+    QueststoAssign: 03000000
+    QueststoMarkComplete: 

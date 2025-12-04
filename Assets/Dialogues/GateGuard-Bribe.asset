@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f32df80fcd9ecd04789b52c360eb0452, type: 3}
+  m_Name: GateGuard-Bribe
+  m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
+  npcName: Gaurd
+  npcPortrait: {fileID: -6867757744863099905, guid: b5c83fecb2377b4458ab29d362f0a4a0, type: 3}
+  dilaogueLines:
+  - "What\u2019s that? You want me to let you in? "
+  - Hah! You must think I was born yesterday. The gates stay shut, friend.
+  - You really think you can just waltz in here? I don't see this gate opening for
+    a beggar like you.
+  - You must be some kind of buffoon huh?!
+  - Don't give me that look. It's not a negotiation.
+  - ...
+  - '*Coughs discreetly*'
+  - Look, I'm not a monster, but I have a duty. And my pockets are feeling mighty
+    light lately.
+  - What? Why do you care about my financial situation?
+  - Well, hypothetically... if a certain, shall we say, payment were to appear...
+    my duty might become... flexible.
+  - I'm talking about a proper sum of 100 Gold. That's the going rate for me to temporarily
+    forget my post
+  - ...
+  - Bring me 100 Gold, and we can talk about this gate opening up.
+  - Until then, stay on that side. Move along.
+  autoProgressLines: 0101010101010100010101010101
+  endDialogueLines: 0000000000000000000000000001
+  autoProgressDelay: 1.5
+  typingSpeed: 0.03
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  choices:
+  - dialogueIndex: 7
+    choices:
+    - Are you poor?
+    nextDialogueIndexes: 09000000
+    QueststoAssign: 
+    QueststoMarkComplete: 
+  - dialogueIndex: 12
+    choices:
+    - Okay..
+    nextDialogueIndexes: 0d000000
+    QueststoAssign: 06000000
+    QueststoMarkComplete: 
