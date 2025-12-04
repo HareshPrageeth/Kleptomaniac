@@ -1,18 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class FadeScreen : MonoBehaviour
 {
     [SerializeField] private Image fadeImage;
 
-    private void Awake()
+    private void Start()
     {
         if (fadeImage != null)
         {
-            Color c = fadeImage.color;
-            c.a = 0f;
-            fadeImage.color = c;
+            StartCoroutine(FadeIn(1f));
         }
     }
 
@@ -40,5 +39,20 @@ public class FadeScreen : MonoBehaviour
         }
         c.a = 0f;
         fadeImage.color = c;
+    }
+
+    public IEnumerator FadeSwitch(float duration, string scene)
+    {
+        Color c = fadeImage.color;
+        for (float t = 0; t < duration; t += Time.deltaTime)
+        {
+            c.a = t / duration;
+            fadeImage.color = c;
+            yield return null;
+        }
+        c.a = 1f;
+        fadeImage.color = c;
+
+        SceneManager.LoadScene(scene);
     }
 }
