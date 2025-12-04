@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using TMPro;
 
 public class player_controller : MonoBehaviour
 {
@@ -18,7 +19,10 @@ public class player_controller : MonoBehaviour
     public TileObjectRegistry objectRegistry;
 
     public TileObject heldItem = null;
-    public SpriteRenderer heldItemRenderer; 
+    public SpriteRenderer heldItemRenderer;
+
+    public int gold = 0;
+    public  TextMeshProUGUI goldText;
 
     private Vector3Int heldItemOrigin;
     private TilemapType heldItemMainMap;
@@ -276,6 +280,12 @@ public class player_controller : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
+    }
+
+    public void AddGold(int amount)
+    {
+        gold += amount;
+        goldText.text = $"Gold: {gold}";
     }
 
 }

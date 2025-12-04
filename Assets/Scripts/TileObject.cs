@@ -27,4 +27,6 @@ public class TileObject : ScriptableObject
     public List<TilePart> parts;    // all connected tiles
     public int inventorySize = 1;
     public Sprite icon;
+
+    public int goldValue = 0;
 }

@@ -23,3 +23,4 @@ MonoBehaviour:
     tile: {fileID: 11400000, guid: 5c7fe8e555ddc6040a255ec3128b1430, type: 2}
   inventorySize: 2
   icon: {fileID: -6254015798558362956, guid: a4efeba5aa833f34ba88636b8edc5305, type: 3}
+  goldValue: 10
