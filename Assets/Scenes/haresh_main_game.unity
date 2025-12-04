@@ -75874,6 +75874,7 @@ GameObject:
   - component: {fileID: 726563559}
   - component: {fileID: 726563560}
   - component: {fileID: 726563561}
+  - component: {fileID: 726563562}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -75953,6 +75954,18 @@ MonoBehaviour:
   portraitImage: {fileID: 1012407458}
   choiceContainer: {fileID: 222682192}
   choiceButtonPrefab: {fileID: 1547949232775100317, guid: 703615b99ae0a6841bb09eb528efdd0b, type: 3}
+--- !u!114 &726563562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726563556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a31de0ecd9ac644ba120817d8fa246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &738093823
 GameObject:
   m_ObjectHideFlags: 0
