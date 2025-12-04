@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb136113fa062045a63cc6a17aea098, type: 3}
+  m_Name: MediumGoldPile
+  m_EditorClassIdentifier: Assembly-CSharp::TileObject
+  objectName: Medium Gold Pile
+  mainTile: {fileID: 11400000, guid: 0e98550eb7ddfac49addb201d318f861, type: 2}
+  parts:
+  - mapType: 0
+    offset: {x: 0, y: 0, z: 0}
+    tile: {fileID: 11400000, guid: 0e98550eb7ddfac49addb201d318f861, type: 2}
+  - mapType: 0
+    offset: {x: 1, y: 0, z: 0}
+    tile: {fileID: 11400000, guid: 5e57a497db3865340946d77a33500223, type: 2}
+  - mapType: 1
+    offset: {x: 0, y: 1, z: 0}
+    tile: {fileID: 11400000, guid: c228cc50caad27b4fa14214e96edecf3, type: 2}
+  - mapType: 1
+    offset: {x: 1, y: 1, z: 0}
+    tile: {fileID: 11400000, guid: 21bf8a3d16667104db9032cc06c76961, type: 2}
+  inventorySize: 1
+  icon: {fileID: -5726543648935830370, guid: 317e7932b62138b449476213533aa0d0, type: 3}
+  goldValue: 25
