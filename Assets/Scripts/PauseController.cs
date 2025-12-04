@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class PauseController : MonoBehaviour
 {
-    public static bool gameIsPaused { get; private set; } = false;
+    public static bool gameIsPaused { get; private set; } = false;    
+    public static bool PausedForDialogue { get; set; } = false;
     public GameObject pausePanel;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !PausedForDialogue)
         {
             PauseGame();
         }
@@ -32,9 +33,5 @@ public class PauseController : MonoBehaviour
         } 
 
     }
-
-
-
-
-    
+   
 }

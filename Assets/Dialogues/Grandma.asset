@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f32df80fcd9ecd04789b52c360eb0452, type: 3}
+  m_Name: Grandma
+  m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
+  npcName: Grandma
+  npcPortrait: {fileID: -7786770284008050647, guid: 9a2f6e9d18a551c4c8320d732cf100b9, type: 3}
+  dilaogueLines:
+  - 'Oh-Hello there! Have you seen my grandson? His name is Gerald. '
+  - 'He was supposed to walk me to my house. '
+  - "You see\u2026 my legs\u2026 "
+  - "They don\u2019t work like they used to."
+  - I hate to bother you but..
+  - Could you possibly help me get home? I live across town in the [insert color]
+    house.
+  - Thanks I appreciate it!
+  - Oh-well.. Sorry to bother you.
+  autoProgressLines: 01010101010101
+  autoProgressDelay: 1.5
+  typingSpeed: 0.075
+  voiceSound: {fileID: 0}
+  voicePitch: 1
