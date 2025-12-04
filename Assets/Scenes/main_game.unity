@@ -22361,6 +22361,8 @@ MonoBehaviour:
   - {x: 9, y: 64, z: 0}
   tileToAdd: {fileID: 11400000, guid: 24573a6591cf49b489fc75062607062b, type: 2}
   tileToAddPosition: {x: 7, y: 43, z: 0}
+  audioSource: {fileID: 0}
+  leverSound: {fileID: 0}
 --- !u!1001 &363736358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70667,6 +70669,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -2, y: 94, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 546
+      m_TileSpriteIndex: 40
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 3, y: 94, z: 0}
     second:
       serializedVersion: 2
@@ -70742,6 +70754,16 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 576
       m_TileSpriteIndex: 576
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -2, y: 95, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 545
+      m_TileSpriteIndex: 39
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -72649,10 +72671,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 407f86f2a1854d740aa609e2b282a2e9, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 5f12b3ad28609ba4e905be7b4ed9b532, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 63124b7f8f5c7fe4d807ae18966d8af0, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 1ae664e7805c7454d8e7f8d5bde52014, type: 2}
   - m_RefCount: 1
@@ -72876,10 +72898,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1677905902415918154, guid: d995752e5e4b98d45a55c10936ca864a, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 869274703, guid: d995752e5e4b98d45a55c10936ca864a, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1730406738, guid: 0484e1a3102c89d4782f56bb94944396, type: 3}
   - m_RefCount: 1
@@ -74037,7 +74059,7 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 1875321124, guid: d13ec5b1cfafae84d856886df29a8499, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 4348
+  - m_RefCount: 4350
     m_Data:
       e00: 1
       e01: 0
@@ -74056,7 +74078,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 4348
+  - m_RefCount: 4350
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 4.5e-44, g: 4.5e-44, b: 4.5e-44, a: 4.5e-44}
@@ -76578,6 +76600,8 @@ MonoBehaviour:
   - {x: -2, y: 97, z: 0}
   tileToAdd: {fileID: 11400000, guid: 24573a6591cf49b489fc75062607062b, type: 2}
   tileToAddPosition: {x: -17, y: 73, z: 0}
+  audioSource: {fileID: 0}
+  leverSound: {fileID: 0}
 --- !u!1 &886179759
 GameObject:
   m_ObjectHideFlags: 0
@@ -183448,6 +183472,7 @@ MonoBehaviour:
   gold: 0
   goldText: {fileID: 2139069300}
   canMove: 1
+  pickupSound: {fileID: 0}
 --- !u!212 &1621361787
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -4,6 +4,14 @@ public class DropoffPoint : MonoBehaviour
 {
     private player_controller player;
 
+    private AudioSource audioSource;
+    public AudioClip goldSound;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Player entered dropoff point.");
@@ -66,6 +74,8 @@ public class DropoffPoint : MonoBehaviour
 
         // add gold to player
         player.AddGold(objToDeposit.goldValue);
+        audioSource.PlayOneShot(goldSound);
+
 
         Debug.Log($"Deposited {objToDeposit.objectName} for {objToDeposit.goldValue} gold.");
     }

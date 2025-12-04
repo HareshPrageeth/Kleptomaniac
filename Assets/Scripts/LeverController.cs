@@ -16,6 +16,13 @@ public class LeverController : MonoBehaviour
     public TileBase tileToAdd;
     public Vector3Int tileToAddPosition;
 
+    public AudioSource audioSource;
+    public AudioClip leverSound;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     private void Update()
     {
         if (player == null) return;
@@ -40,6 +47,8 @@ public class LeverController : MonoBehaviour
         // add the new lever tile
         if (tileToAdd != null)
             collisionTilemap.SetTile(tileToAddPosition, tileToAdd);
+
+        audioSource.PlayOneShot(leverSound);
 
         Debug.Log("Lever activated: removed tiles + added new tile.");
     }
