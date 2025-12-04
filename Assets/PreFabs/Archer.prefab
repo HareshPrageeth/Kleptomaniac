@@ -1055,7 +1055,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue_Controller
   dialogueData: {fileID: 11400000, guid: c80c351435fce5a4cb8665921a684c2d, type: 2}
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  portraitImage: {fileID: 0}

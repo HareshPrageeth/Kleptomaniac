@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f32df80fcd9ecd04789b52c360eb0452, type: 3}
+  m_Name: GateGuard-FindCat
+  m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
+  npcName: Gaurd
+  npcPortrait: {fileID: -6867757744863099905, guid: b5c83fecb2377b4458ab29d362f0a4a0, type: 3}
+  dilaogueLines:
+  - "What\u2019s that? You want me to let you in? "
+  - Yeah right in your dreams buddy, keep dreaming!
+  - "You really thought I\u2019d just let you in?"
+  - You must be some kind of buffoon huh?!
+  - ...
+  - ...
+  - '*sigh*'
+  - Sorry...
+  - "I\u2019m not usually a rude person, its just\u2026"
+  - "I lost my bestfriend recently and it\u2019s just not been the same without him. "
+  - What? No he's not dead, he's just lost.
+  - I'm talking about my cat, Fredrick
+  - I accidentally left the door to my house open and he wandered out.
+  - "I haven\u2019t been able to find him since. "
+  - ...
+  - I miss him...
+  - Anyways, you can't come in.
+  - Scram!
+  autoProgressLines: 010101010101010101010001010101010101
+  endDialogueLines: 000000000000000000000000000000000001
+  autoProgressDelay: 1.5
+  typingSpeed: 0.03
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  choices:
+  - dialogueIndex: 9
+    choices:
+    - Sorry for your loss...
+    nextDialogueIndexes: 0a000000

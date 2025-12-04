@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f32df80fcd9ecd04789b52c360eb0452, type: 3}
-  m_Name: Grandma
+  m_Name: Grandma-TakeMeHome
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogue
   npcName: Grandma
   npcPortrait: {fileID: -7786770284008050647, guid: 9a2f6e9d18a551c4c8320d732cf100b9, type: 3}
@@ -19,13 +19,20 @@ MonoBehaviour:
   - 'He was supposed to walk me to my house. '
   - "You see\u2026 my legs\u2026 "
   - "They don\u2019t work like they used to."
-  - I hate to bother you but..
+  - I hate to bother you but...
   - Could you possibly help me get home? I live across town in the [insert color]
     house.
   - Thanks I appreciate it!
-  - Oh-well.. Sorry to bother you.
-  autoProgressLines: 01010101010101
+  - Oh-well... Sorry to bother you.
+  autoProgressLines: 0101010101000101
+  endDialogueLines: 0000000000000101
   autoProgressDelay: 1.5
   typingSpeed: 0.075
   voiceSound: {fileID: 0}
   voicePitch: 1
+  choices:
+  - dialogueIndex: 5
+    choices:
+    - Sure.
+    - Nah.
+    nextDialogueIndexes: 0600000007000000

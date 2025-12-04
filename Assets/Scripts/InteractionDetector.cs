@@ -15,6 +15,7 @@ public class InteractionDetector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Press I to interact.");
         if(collision.TryGetComponent(out Interactable interactable) && interactable.CanInteract())
         {
             if (currentInteractionObject != null)
