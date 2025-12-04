@@ -39,6 +39,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+        // Play Death Effect
+        SceneLoader.Instance.SwitchScene("GameOver");
         Debug.Log("Player Died!");
     }
 }
