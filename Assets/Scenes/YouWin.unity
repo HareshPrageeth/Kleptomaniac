@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 309180024}
   - component: {fileID: 309180023}
   m_Layer: 5
-  m_Name: Gold
+  m_Name: Crown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You collected X gold!
+  m_text: You stole the crown!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a7b1e55c54e5fbc47bb1dcc07c4b6a56, type: 2}
   m_sharedMaterial: {fileID: 3963627942262085940, guid: a7b1e55c54e5fbc47bb1dcc07c4b6a56, type: 2}

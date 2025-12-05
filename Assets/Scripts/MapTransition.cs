@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using Unity.Cinemachine;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class MapTransition : MonoBehaviour
@@ -15,6 +14,10 @@ public class MapTransition : MonoBehaviour
 
     enum Direction {Up, Down, Left, Right, Teleport }
     enum Facing {Up, Down}
+
+    public bool isTown;
+    public bool isInterior;
+    public bool isCastle;
 
     private void Awake()
     {
@@ -54,6 +57,21 @@ public class MapTransition : MonoBehaviour
         player.transform.position = teleportTargetLocation.position;
         yield return new WaitForSeconds(1f);
         yield return StartCoroutine(fadeScreen.FadeIn(1f));
+
+        if(isTown)
+        {
+            MusicPlayer.Instance.PlayTownMusic();
+        }
+
+        if(isInterior)
+        {
+            MusicPlayer.Instance.PlayInteriorMusic();
+        }
+
+        if(isCastle)
+        {
+            MusicPlayer.Instance.PlayCastleMusic();
+        }
 
         controller.canMove = true;
         

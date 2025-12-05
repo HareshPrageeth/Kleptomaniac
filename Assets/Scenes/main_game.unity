@@ -8455,6 +8455,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 1517158779}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &17028068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8819,7 +8822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &79373761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8873,8 +8876,8 @@ RectTransform:
   m_Father: {fileID: 2068754895}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 62175.598, y: 34940.164}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &87644816
@@ -8987,6 +8990,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 1112871318}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &91846544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14208,6 +14214,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 631615113}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &175542463
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -89438,6 +89447,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 1960998614}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &522599162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -90267,6 +90279,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 1067019039}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &607518777
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -90425,6 +90440,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 1856353015}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &617255827
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -91191,6 +91209,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 508627046}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &718418357
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -97095,6 +97116,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 849774905}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &919622739
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -97546,6 +97570,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 921801792}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &971659435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -97907,6 +97934,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 87644817}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &989995879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -98169,6 +98199,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 243606462}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1016832802
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -103422,6 +103455,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 118933716}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1102434562
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108594,6 +108630,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 281665081}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1133248010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108891,6 +108930,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 768201348}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1158250922
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -110607,6 +110649,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 1661925304}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1431520317
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -112054,6 +112099,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 931833697}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1597011205
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -215222,6 +215270,9 @@ MonoBehaviour:
   facing: 0
   teleportTargetLocation: {fileID: 1000101397}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1733016467
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -215931,6 +215982,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 886179760}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1838014925
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -216056,6 +216110,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 1371746146}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1846359297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -221321,6 +221378,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 2052076182}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1868906236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -221973,6 +222033,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 1081775636}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1922781924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -222299,6 +222362,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 961187112}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &1972485691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -227423,6 +227489,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 163491778}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &2013858685
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -227825,6 +227894,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 1636509405}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &2028162830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -233136,8 +233208,8 @@ RectTransform:
   - {fileID: 1593834192}
   - {fileID: 1698653106}
   - {fileID: 2023301294}
-  - {fileID: 79373763}
   - {fileID: 750426541}
+  - {fileID: 79373763}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -238094,6 +238166,9 @@ MonoBehaviour:
   facing: 1
   teleportTargetLocation: {fileID: 1388329282}
   fadeScreen: {fileID: 726563560}
+  isTown: 0
+  isInterior: 0
+  isCastle: 0
 --- !u!61 &2090381872
 BoxCollider2D:
   m_ObjectHideFlags: 0
